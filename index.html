@@ -6,53 +6,315 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/mui.min.css"/>
-		<script type="text/javascript" src="./mui-master/dist/js/mui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/font1.css" />
+		<script type="text/javascript" src="./mui-master/dist/js/mui.js"></script>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
 	</head>
 	<body>
-		 <!--主界面菜单同时移动--> 
-		    <!-- 侧滑导航根容器 -->
-		    <div class="mui-off-canvas-wrap mui-draggable">
-		        <!-- 主页面容器 -->
-		        <div class="mui-inner-wrap">
-		            <!-- 主页面标题 -->
-		            <header class="mui-bar mui-bar-nav">
-		                <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-		                <h1 class="mui-title">标题</h1>
-		            </header>
-		            <nav class="mui-bar mui-bar-tab">
-		    		    <a class="mui-tab-item mui-active">
-		    		        <span class="mui-icon mui-icon-home"></span>
-		    		        <span class="mui-tab-label">首页</span>
-		    		    </a>
-		    		    <a class="mui-tab-item">
-		    		        <span class="mui-icon mui-icon-phone"></span>
-		    		        <span class="mui-tab-label">财富</span>
-		    		    </a>
-		    		    <a class="mui-tab-item">
-		    		        <span class="mui-icon mui-icon-email"></span>
-		    		        <span class="mui-tab-label">口碑</span>
-		    		    </a>
-		    		    <a class="mui-tab-item">
-		    		        <span class="mui-icon mui-icon-personadd"></span>
-		    		        <span class="mui-tab-label">朋友</span>
-		    		    </a>
-		    		    <a class="mui-tab-item">
-		    		        <span class="mui-icon mui-icon-person"></span>
-		    		        <span class="mui-tab-label">我的</span>
-		    		    </a>
-		    		</nav>
-		            <!-- 主页面内容容器 -->
-		            <div class="mui-content mui-scroll-wrapper">
-		                <div class="mui-scroll">
-		                    <!-- 主界面具体展示内容 -->
-		                    
-		                </div>
-		            </div>
-		       	 <div class="mui-off-canvas-backdrop"></div>
-		        </div>
-		    </div>
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <div class="mui-inner-wrap">
+	            <header class="mui-bar mui-bar-nav">
+	            		<div class="top">
+	            			<div>
+	            				<label>
+		            				<a href="javascript:;" class="mui-icon mui-icon-search"></a>
+		            				<input type="text" placeholder="电影:淘出好电影">
+		            			</label>
+		            			<a href="javascript:;" class="mui-icon mui-icon-mic"></a>
+		            		</div>
+		            		<a href="javascript:;" class="mui-icon mui-icon-bars"></a>
+		            		<a href="javascript:;" class="mui-icon mui-icon-plusempty"></a>
+	            		</div>
+            			<div class="bto">
+            				<div>
+            					<a href="" class="mui-icon-extra mui-icon-extra-sweep"></a>
+            					<a href="" class="mui-icon-extra mui-icon-extra-prech"></a>
+            					<a href="" class="mui-icon-extra mui-icon-extra-gold"></a>
+            					<a href="" class="mui-icon mui-icon-search"></a>
+            				</div>
+            				<a href="" class="mui-icon mui-icon-plusempty"></a>
+            			</div>
+	            </header>
+	            <nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active">
+	    		        <span class="mui-icon-extra mui-icon-extra-alipay"></span>
+	    		        <span class="mui-tab-label">首页</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" href="./money.html">
+	    		        <span class="mui-icon mui-icon-phone"></span>
+	    		        <span class="mui-tab-label">财富</span>
+	    		    </a>
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon mui-icon-email"></span>
+	    		        <span class="mui-tab-label">口碑</span>
+	    		    </a>
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon-extra mui-icon-extra-peoples"></span>
+	    		        <span class="mui-tab-label">朋友</span>
+	    		    </a>
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon mui-icon-person"></span>
+	    		        <span class="mui-tab-label">我的</span>
+	    		    </a>
+	    		</nav>
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                    <div class="one">
+	                    	<a class="mui-tab-item mui-active">
+			    		        <span class="mui-icon-extra mui-icon-extra-sweep"></span>
+			    		        <span class="mui-tab-label">扫一扫</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-fuqian"></span>
+			    		        <span class="mui-tab-label">付钱</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-shouqian"></span>
+			    		        <span class="mui-tab-label">收钱</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-qiabao"></span>
+			    		        <span class="mui-tab-label">卡包</span>
+			    		    </a>
+	                    </div>
+	                	<div class="tow">
+	                		<a class="mui-tab-item mui-active">
+			    		        <span class="iconfont icon-zhuanzhang"></span>
+			    		        <span class="mui-tab-label">转账</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-ji"></span>
+			    		        <span class="mui-tab-label">蚂蚁庄园</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="mui-icon-extra mui-icon-extra-phone"></span>
+			    		        <span class="mui-tab-label">充值中心</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-qiandai"></span>
+			    		        <span class="mui-tab-label">余额宝</span>
+			    		    </a>
+			    		    <a class="mui-tab-item mui-active">
+			    		        <span class="iconfont icon-aa"></span>
+			    		        <span class="mui-tab-label">AA收款</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-mayisenlin"></span>
+			    		        <span class="mui-tab-label">蚂蚁森林</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-zhimaxinyong"></span>
+			    		        <span class="mui-tab-label">芝麻信用</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-mayibaoxian"></span>
+			    		        <span class="mui-tab-label">蚂蚁保险</span>
+			    		    </a>
+			    		    <a class="mui-tab-item mui-active">
+			    		        <span class="iconfont icon-shenghuohao"></span>
+			    		        <span class="mui-tab-label">生活号</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-wodekuaidi"></span>
+			    		        <span class="mui-tab-label">我的快递</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-yundong"></span>
+			    		        <span class="mui-tab-label">运动</span>
+			    		    </a>
+			    		    <a class="mui-tab-item">
+			    		        <span class="iconfont icon-gengduo"></span>
+			    		        <span class="mui-tab-label">更多</span>
+			    		    </a>
+	                	</div>
+	                	<div class="three">
+	                		<a class="mui-tab-item">
+			    		        <span class="iconfont icon-liubianxingwujiaoxing"></span>
+			    		        <span class="mui-tab-label">小程序收藏</span>
+			    		    </a>
+	                	</div>
+                		<div class="four">
+                			<a>
+        		               <img src="./img/mayi.jpg" alt="" />
+        		               <ul>
+	        		               	<li>你有一张劵即将到期<span>2小时前</span></li>
+	        		               	<li>你本次付款获得的优惠<span>5小时前</span></li>
+        		               </ul>
+        		               <span>
+        		               	＞
+        		               </span>
+        		            </a>
+                		</div>
+                		<div id="slider" class="mui-slider" >
+                		  <div class="mui-slider-group mui-slider-loop">
+                		    <div class="mui-slider-item mui-slider-item-duplicate">
+                		      <a href="#">
+                		        <img src="./img/lunbo1.png">
+                		      </a>
+                		    </div>
+                		    <!-- 第一张 -->
+                		    <div class="mui-slider-item">
+                		      <a href="#">
+                		        <img src="./img/lunbo1.png">
+                		      </a>
+                		    </div>
+                		    <!-- 第二张 -->
+                		    <div class="mui-slider-item">
+                		      <a href="#">
+                		        <img src="./img/lunbo2.png">
+                		      </a>
+                		    </div>
+                		    <!-- 第三张 -->
+                		    <div class="mui-slider-item">
+                		      <a href="#">
+                		        <img src="./img/lunbo3.png">
+                		      </a>
+                		    </div>
+                		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                		    <div class="mui-slider-item mui-slider-item-duplicate">
+                		      <a href="#">
+                		        <img src="./img/lunbo1.png">
+                		      </a>
+                		    </div>
+                		  </div>
+                		</div>
+	                	<div class="btm">
+			            	<div>
+			            		<div class="moban">
+				            		<span class="mspan">惠支付</span>
+				            		<div class="mdiv">
+				            			<div class="mo ac">
+				            				<div class="left">
+				            					<span>8888元</span>
+				            					<s>等你来分</s>
+				            				</div>
+				            				<img src="./img/tb1.png" alt="" />
+				            			</div>
+				            			<div class="mo">
+				            				<div class="left">
+				            					<span>赚钱红包升级</span>
+				            					<s>137份赏金到手</s>
+				            				</div>
+				            				<img src="./img/tb2.png" alt="" />
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div class="moban">
+				            		<span class="mspan">生活服务</span>
+				            		<div class="mdiv">
+				            			<div class="mo ac">
+				            				<div class="left">
+				            					<span>个人缴纳社保</span>
+				            					<s>不上班咋交社保？</s>
+				            				</div>
+				            				<img src="./img/tb3.png" alt="" />
+				            			</div>
+				            			<div class="mo">
+				            				<div class="left">
+				            					<span>孩子教育技巧</span>
+				            					<s>这些关键你知道吗</s>
+				            				</div>
+				            				<img src="./img/tb4.png" alt="" />
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div class="moban">
+				            		<span class="mspan">每日必抢</span>
+				            		<div class="mdivb">
+				            			<div class="one">
+				            				<div class="mob">
+					            				<img src="./img/h1.png" alt="" />
+					            				<span>抽纸10包装</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div><div class="mob">
+					            				<img src="./img/h2.png" alt="" />
+					            				<span>洗衣液900g</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div>
+					            			<div class="mob">
+					            				<img src="./img/h3.png" alt="" />
+					            				<span>男士棉袜十双</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div>
+					            			<div class="mob">
+					            				<img src="./img/h4.png" alt="" />
+					            				<span>可升缩手机架</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div>
+					            			<div class="mob">
+					            				<img src="./img/h5.png" alt="" />
+					            				<span>居家夏季拖鞋</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div>
+					            			<div class="mob">
+					            				<img src="./img/h6.png" alt="" />
+					            				<span>整箱抽纸</span>
+					            				<p>特惠价<b>热抢中</b></p>
+					            			</div>
+				            			</div>
+				            			<ul class="mui-table-view">
+										    <li class="mui-table-view-cell">
+										        <a class="mui-navigate-right">天天砸金蛋抢红包，下单立减。立刻去</a>
+										    </li>
+										</ul>
+				            		</div>
+				            	</div>
+			            	</div>
+			            </div>
+			            <div class="dx">
+			            	<span>我是有底线的</span>
+			            </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</body>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript">
-			mui.init()
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		var scroll =mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				indicators:false,
+				bounce: false
+		});
+		if(scroll.y === 0){
+			mui('.three').on("swipedown",".three .mui-tab-item",function(){
+				mui('.mui-scroll-wrapper .mui-scroll').scroll({
+						scrollY:false,
+					});
+				$('.three .mui-tab-item').css("display","block");
+				$('.mui-bar-nav .top').css("display","flex");
+				$('.mui-bar-nav .bto').css("display","none");
+			});
+		}
+		mui('.mui-scroll-wrapper').on("swipedown",".mui-scroll",function(){
+			if(scroll.y === 0){
+//					
+//					scroll.y = 0;
+				$('.three .mui-tab-item').css("display","block");
+				$('.mui-bar-nav .top').css("display","flex");
+				$('.mui-bar-nav .bto').css("display","none");
+			}
+		});
+		mui('.mui-scroll-wrapper').on("swipeup",".mui-scroll",function(){
+		　　if($('.three .mui-tab-item').css("display") ==='block'){
+				scroll.y = 0;
+				$('.three .mui-tab-item').css("display","none");
+			}else if($('.three .mui-tab-item').css("display") ==='none'){
+				mui('.mui-scroll-wrapper .mui-scroll').scroll({
+					scrollY:true,
+				});
+				$('.mui-bar-nav .top').css("display","none");
+				$('.mui-bar-nav .bto').css("display","flex");
+			}
+		});
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
 	</script>
 </html>

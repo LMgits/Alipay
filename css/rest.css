@@ -1,0 +1,20 @@
+.mui-bar-nav{
+	overflow:hidden;
+	height:1.222222rem;
+	background: #1b82d2;
+	padding:0;
+	position:relative;
+}
+.mui-icon-extra {
+	border-radius:50%;
+	position: relative;
+	top:6px;
+	width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+.mui-tab-label{
+	font-size: 11px;
+    display: block;
+    overflow: hidden;
+}
