@@ -34,10 +34,6 @@
 	    		        <span class="mui-tab-label">财富</span>
 	    		    </a>
 	    		    <a class="mui-tab-item">
-	    		        <span class="mui-icon mui-icon-email"></span>
-	    		        <span class="mui-tab-label">口碑</span>
-	    		    </a>
-	    		    <a class="mui-tab-item">
 	    		        <span class="mui-icon-extra mui-icon-extra-peoples"></span>
 	    		        <span class="mui-tab-label">朋友</span>
 	    		    </a>
@@ -179,10 +175,86 @@
 		                	</div>
 		                	<div class="ni">
 		                		<div>
+		                			<a class="mui-tab-item">
+					    		        <span class="iconfont icon-huangguan"></span>
+					    		        <span class="mui-tab-label">财富王者</span>
+					    		        <p>答题开福袋</p>
+				    		   		</a>
+				    		   		<a class="mui-tab-item">
+					    		        <span class="iconfont icon-taiyangbaitianrijianmoshibaitianqingxianxing"></span>
+					    		        <span class="mui-tab-label">大盘晴雨表</span>
+					    		        <p>集天气合成礼包</p>
+				    		   		</a>
+				    		   		<a class="mui-tab-item">
+					    		        <span class="iconfont icon-gupiao1"></span>
+					    		        <span class="mui-tab-label">猜涨跌</span>
+					    		        <p>每日赢支付宝积分</p>
+				    		   		</a>
+		                		</div>
+		                	</div>
+		                	<div class="ten">
+		                		<div class="ti">
+		                			<span>理财有好货</span>
+		                			<a href="">更多</a>
+		                		</div>
+		                	</div>
+		                	<div id="slider" class="mui-slider" >
+		                	  <div class="mui-slider-group">
+		                	    <!-- 第一张 -->
+		                	    <div class="mui-slider-item">
+		                	      <a href="#">
+		                	        <img src="./img/mll1.png">
+		                	      </a>
+		                	    </div>
+		                	    <!-- 第二张 -->
+		                	    <div class="mui-slider-item">
+		                	      <a href="#">
+		                	        <img src="./img/mll1.png">
+		                	      </a>
+		                	    </div>
+		                	  </div>
+		                	</div>
+		                	<div class="ele">
+		                		<div class="ti">
+		                			<span>财富有料</span>
+		                			<a href="">更多</a>
+		                		</div>
+		                	</div>
+		                	<div class="tel">
+		                		<div class="moba xian">
+		                			<img src="./img/sc2.png" alt="" />
 		                			<div>
-		                				
+		                				<p>中国超半数家庭0存款 你的银行卡里面有多少数？</p>
+		                				<span><s>2.4万阅读</s><s>240评论</s><s>要闻</s></span>
 		                			</div>
 		                		</div>
+		                		<div class="moba ">
+		                			<img src="./img/sc3.png" alt="" />
+		                			<div>
+		                				<p>新版人民币来了！为何没有5元纸币？</p>
+		                				<span><s>10万+阅读</s><s>1967评论</s><s>推荐</s></span>
+		                			</div>
+		                		</div>
+		                		<div class="moba bg">
+		                			<img src="./img/sc4.png" alt="" />
+		                			<div>
+		                				<a href="">精题专栏</a>
+		                				<p>女子拿一套房子做嫁妆，男方却骂“太不要脸”……</p>
+		                			</div>
+		                		</div>
+		                	</div>
+		                	<div class="tth">
+		                		<div class="ti">
+		                			<span>精选财富号</span>
+		                			<a href="">更多</a>
+		                		</div>
+		                	</div>
+		                	<div class="fth">
+	                			<img src="./img/msh.png" alt="" />
+		                	</div>
+		                	<div class="sth">
+		                		<span class="iconfont icon-mayicaifulogo">蚂蚁财富</span>
+		                		<p>过往业绩不预示产品未来表现，市场有风险，投资需谨慎 ></p>
 		                	</div>
 	                	</div>
 	                </div>
@@ -201,6 +273,14 @@
 				indicators:false,
 				bounce: false
 		});
+//		setInterval(function(){
+//			console.log(scroll.y);
+////			if(scroll.y <= '-1128'){
+////				console.log(1);
+////				scroll.y = '-1128';
+////			}
+//		},10)
+		
 		mui.init({
 		  	 pullRefresh: {
                 container: '#pullrefresh',
@@ -213,6 +293,9 @@
 				            mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
 						}, 1000);
 					}
+                },
+                up:{
+                	
                 }
 			}
 		}); 

@@ -49,10 +49,6 @@
 	    		        <span class="mui-tab-label">财富</span>
 	    		    </a>
 	    		    <a class="mui-tab-item">
-	    		        <span class="mui-icon mui-icon-email"></span>
-	    		        <span class="mui-tab-label">口碑</span>
-	    		    </a>
-	    		    <a class="mui-tab-item">
 	    		        <span class="mui-icon-extra mui-icon-extra-peoples"></span>
 	    		        <span class="mui-tab-label">朋友</span>
 	    		    </a>
@@ -284,37 +280,37 @@
 				indicators:false,
 				bounce: false
 		});
-		if(scroll.y === 0){
-			mui('.three').on("swipedown",".three .mui-tab-item",function(){
-				mui('.mui-scroll-wrapper .mui-scroll').scroll({
-						scrollY:false,
-					});
-				$('.three .mui-tab-item').css("display","block");
-				$('.mui-bar-nav .top').css("display","flex");
-				$('.mui-bar-nav .bto').css("display","none");
-			});
-		}
-		mui('.mui-scroll-wrapper').on("swipedown",".mui-scroll",function(){
-			if(scroll.y === 0){
-//					
-//					scroll.y = 0;
-				$('.three .mui-tab-item').css("display","block");
-				$('.mui-bar-nav .top').css("display","flex");
-				$('.mui-bar-nav .bto').css("display","none");
-			}
-		});
-		mui('.mui-scroll-wrapper').on("swipeup",".mui-scroll",function(){
-		　　if($('.three .mui-tab-item').css("display") ==='block'){
-				scroll.y = 0;
-				$('.three .mui-tab-item').css("display","none");
-			}else if($('.three .mui-tab-item').css("display") ==='none'){
-				mui('.mui-scroll-wrapper .mui-scroll').scroll({
-					scrollY:true,
-				});
-				$('.mui-bar-nav .top').css("display","none");
-				$('.mui-bar-nav .bto').css("display","flex");
-			}
-		});
+//		if(scroll.y === 0){
+//			mui('.three').on("swipedown",".three .mui-tab-item",function(){
+//				mui('.mui-scroll-wrapper .mui-scroll').scroll({
+//						scrollY:false,
+//					});
+//				$('.three .mui-tab-item').css("display","block");
+//				$('.mui-bar-nav .top').css("display","flex");
+//				$('.mui-bar-nav .bto').css("display","none");
+//			});
+//		}
+//		mui('.mui-scroll-wrapper').on("swipedown",".mui-scroll",function(){
+//			if(scroll.y === 0){
+////					
+////					scroll.y = 0;
+//				$('.three .mui-tab-item').css("display","block");
+//				$('.mui-bar-nav .top').css("display","flex");
+//				$('.mui-bar-nav .bto').css("display","none");
+//			}
+//		});
+//		mui('.mui-scroll-wrapper').on("swipeup",".mui-scroll",function(){
+//		　　if($('.three .mui-tab-item').css("display") ==='block'){
+//				scroll.y = 0;
+//				$('.three .mui-tab-item').css("display","none");
+//			}else if($('.three .mui-tab-item').css("display") ==='none'){
+//				mui('.mui-scroll-wrapper .mui-scroll').scroll({
+//					scrollY:true,
+//				});
+//				$('.mui-bar-nav .top').css("display","none");
+//				$('.mui-bar-nav .bto').css("display","flex");
+//			}
+//		});
 		mui('body').on('tap','a',function(){document.location.href=this.href;});
 	</script>
 </html>
