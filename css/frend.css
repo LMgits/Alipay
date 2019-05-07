@@ -1,0 +1,102 @@
+.mui-bar-nav .top{
+	background: #1b82d2;
+	padding-left: 0.37037rem;
+	padding-right:0.37037rem;
+	height:1.203703rem;
+	line-height:1.203703rem ;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	color:#fff;
+	font-size: 0.416666rem;
+	overflow: hidden;
+}
+.mui-bar-nav .top div>a{
+	color: #fff;
+}
+.hea{
+	width:100%;
+	display:flex;
+	height: 2.962962rem;
+	justify-content:space-between;
+	align-items: center;
+	background:#fff;
+	margin-bottom:0.231481rem;
+}
+.hea .mui-tab-item{
+	height: 2.314814rem;
+	width: 3.333333rem;
+	border-right: 0.009259rem solid #acacac;
+	text-align: center;
+}
+.hea .mui-tab-item .iconfont{
+	display: block;
+	margin: 0 auto;
+	width: 1.111111rem;
+	height: 1.111111rem;
+	line-height: 1.111111rem;
+	font-size: 0.74074rem;
+	color: #fff;
+	border-radius: 20%;
+}
+.hea .mui-tab-item .icon-shenghuohao{
+	background: #6fd4d2;
+}
+.hea .mui-tab-item .icon-liubianxingwujiaoxing{
+	background: #95cbf4;
+}
+.hea .mui-tab-item .icon-yundong{
+	background: #f9a592;
+}
+.hea .mui-tab-item .mui-tab-label{
+	font-size: 0.342592rem;
+	color: #000;
+}
+.hea .mui-tab-item p{
+	color: #acacac;
+	font-size: 0.277777rem;
+}
+.hea .mui-active{
+	border: none;
+}
+.con{
+	background: #fff;
+}
+.con>a{
+	display: block;
+	width: 100%;
+	height: 1.759259rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.con>a>s{
+	line-height:1.759259rem ;
+	text-decoration: none;
+	font-size: 1.388888rem;
+	display: block;
+	text-align: center;
+	width: 2.222222rem;
+}
+.con>a>span{
+	font-size: 0.37037rem;
+	color: #000;
+	height: 100%;
+	display: block;
+	width: 7.787037rem;
+	padding-top: 0.3rem;
+	border-bottom: 0.009259rem solid #acacac;
+}
+.con>a>span>i{
+	font-size: 0.277777rem;
+	color: #ccc;
+	padding-left: 5rem;
+	font-style:normal;
+}
+.con>a>span>i>s{
+	text-decoration: none;
+}
+.con>a>span>p{
+	font-size: 0.324074rem;
+	color: #999;
+}
