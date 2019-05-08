@@ -1,0 +1,56 @@
+@font-face {font-family: "iconfont";
+  src:url('../fonts/iconfont3.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangjiafuwu:before {
+  content: "\e60b";
+}
+
+.icon-money:before {
+  content: "\e636";
+}
+
+.icon-icon:before {
+  content: "\e60c";
+}
+
+.icon-huabei:before {
+  content: "\e630";
+}
+
+.icon-zhangdan:before {
+  content: "\e610";
+}
+
+.icon-wangshangyinhang:before {
+  content: "\e649";
+}
+
+.icon-merchant:before {
+  content: "\e604";
+}
+
+.icon-mayihuiyuanicon:before {
+  content: "\e602";
+}
+
+.icon-kefu:before {
+  content: "\e6bc";
+}
+
+.icon-gongyiguanli:before {
+  content: "\e607";
+}
+
+.icon-ziyuanfenbu_shanxingtu:before {
+  content: "\e661";
+}
+
