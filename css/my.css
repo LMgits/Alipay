@@ -17,6 +17,10 @@
 	font-size: 0.416666rem;
 	overflow: hidden;
 }
+.mui-bar-nav .top>a{
+	color:#fff;
+	font-size: 0.416666rem;
+}
 .one .mui-table-view-cell{
 	background: #1b82d2;
 	display: flex;
@@ -114,7 +118,10 @@
 .icon-qiandai,.icon-gongyiguanli{
 	color: #e8541e;
 }
-.icon-merchant,.icon-wangshangyinhang{
+.icon-merchant,.icon-wangshangyinhang,.icon-zhimaxinyong{
 	color: #0ba194;
+}
+.con .bto{
+	margin-bottom: 0;
 }
 

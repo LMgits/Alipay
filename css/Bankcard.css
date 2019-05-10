@@ -1,0 +1,77 @@
+.mui-off-canvas-wrap .mui-scroll-wrapper{
+	background: #363d47;
+}
+.mui-bar-nav{
+	height: 1.296296rem;
+	background:rgba(54,61,71,0.4);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mui-bar-nav>a{
+	color: #fff;
+}
+.mui-bar-nav>a>s,.mui-bar-nav>span{
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.462962rem;
+}
+.mui-scroll{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mui-scroll .moban{
+	padding-top:0.611111rem ;
+	width: 9.055555rem;
+	height: 3.518518rem;
+	border-radius: 5%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0.37037rem;
+}
+.mui-scroll .moban img{
+	width: 1.018518rem;
+	height: 1.018518rem;
+	border-radius: 50%;
+}
+.mui-scroll .moban div{
+	width: 6.481481rem;
+	height: 2.037037rem;
+	display: flex;
+	flex-direction: column;
+}
+.mui-scroll .moban div span{
+	color: #fff;
+	font-size: 0.462962rem;
+}
+.mui-scroll .moban div span i{
+	margin-left: 0.185185rem;
+	font-size: 0.37037rem;
+}
+.mui-scroll .moban div span i b{
+	margin-left: 0.046296rem;
+	font-style: normal;
+	transform: skew(-20deg);
+	height: 0.37037rem;
+	line-height:  0.37037rem;
+	display: inline-block;
+	background: #fff;
+	color: rgba(0,0,0,0.2);
+}
+.mui-scroll .moban div p{
+	color: #fff;
+	font-size: 0.37037rem;
+	margin-bottom: 0.6rem;
+}
+.mui-scroll .moban div p s{
+	text-decoration: none;
+	font-size: 0.462962rem;
+	margin-right: 0.6rem;
+}
+.mui-scroll .gs,.mui-scroll .zs{
+	background: #ff8771;
+}
+.mui-scroll .js{
+	background: #5a9cd5;
+}

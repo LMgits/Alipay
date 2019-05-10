@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/mui.min.css"/>
+		<script type="text/javascript" src="./mui-master/dist/js/mui.min.js"></script>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/help.css"/>
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/iconfont4.css" />
+	</head>
+	<body>
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <div class="mui-inner-wrap">
+            	<header class="mui-bar mui-bar-nav">
+            		<div class="one">
+            			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./updata.html"><s>帮助</s></a>
+            	    	<a href="./help.html" class="iconfont icon-wenhao"></a>
+            		</div>
+            	    <div class="two">
+            	    	<p>已为您定制如下内容</p>
+            	    	<span>Hi,李茂</span>
+            	    </div>
+            	</header>
+	            <div class="mui-content mui-scroll-wrapper" id="mui-content">
+	                <div class="mui-scroll">
+	                	<div class="on">
+	                		<span>猜你想问</span>
+	                		<a href="">换一换<s></s></a>
+	                	</div>
+	                	<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a>怎么删除绑定的银行卡</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>绑定的银行卡提示证件类型不支持</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>签约快捷支付的银行卡类型</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>怎么查看绑定的银行卡号</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>如何修改储蓄卡快捷银行预留手机</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>支付宝可以绑定多少张银行卡</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>一张银行卡可以绑定几个支付宝</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a>绑定的银行卡删除不了</a>
+						    </li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		var scroll = mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				indicators:false,
+				bounce: false
+		});
+//		setInterval(function(){
+//			console.log(scroll.y);
+////			if(scroll.y <= '-1128'){
+////				console.log(1);
+////				scroll.y = '-1128';
+////			}
+//		},10)
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>

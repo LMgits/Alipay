@@ -1,0 +1,15 @@
+.mui-bar-nav{
+	background: #fff;
+}
+.mui-bar-nav a,.mui-bar-nav a>s{
+	font-size: 0.462962rem;
+	color: #000;
+	text-decoration: none;
+}
+.mui-bar-nav a{
+	color: #1b82d2;
+}
+.mui-table-view{
+	margin-bottom: 0;
+	margin-top: 0.555555rem;
+}

@@ -1,0 +1,34 @@
+.mui-bar-nav a,.mui-bar-nav a>s{
+	font-size: 0.462962rem;
+	color: #fff;
+	text-decoration: none;
+}
+.mui-scroll-wrapper{
+	background: #e5e5ef;
+}
+.mui-table-view{
+	margin-bottom: 0.555555rem;
+}
+.mui-table-view:after{
+	height: 0;
+}
+.mui-table-view:before{
+	height: 0;
+}
+.mui-table-view .moban{
+	width: 8.722222rem;
+	height: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mui-table-view .moban>s{
+	text-decoration: none;
+}
+.mui-table-view .moban>span{
+	color: #999;
+}
+.mui-table-view .moban>img{
+	width: 0.925925rem;
+	height: 0.925925rem;
+}

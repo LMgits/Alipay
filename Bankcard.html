@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/mui.min.css"/>
+		<script type="text/javascript" src="./mui-master/dist/js/mui.min.js"></script>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/Bankcard.css"/>
+	</head>
+	<body>
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <div class="mui-inner-wrap">
+            	<header class="mui-bar mui-bar-nav">
+            	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./my.html"><s>我的银行卡</s></a>
+            	    <span class="mui-icon mui-icon-plusempty"></span>
+            	</header>
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                	<div class="moban gs">
+	                		<img src="./img/gsyh.jpg" alt="" />
+	                		<div>
+	                			<span>中国工商银行<i>快捷<b>支付</b></i></span>
+	                			<p>储蓄卡</p>
+	                			<p><s>****</s><s>****</s><s>****</s><s>0682</s></p>
+	                		</div>
+	                	</div>
+	                	<div class="moban js">
+	                		<img src="./img/gsyh.jpg" alt="" />
+	                		<div>
+	                			<span>中国工商银行<i>快捷<b>支付</b></i></span>
+	                			<p>储蓄卡</p>
+	                			<p><s>****</s><s>****</s><s>****</s><s>0682</s></p>
+	                		</div>
+	                	</div>
+	                	<div class="moban zs">
+	                		<img src="./img/gsyh.jpg" alt="" />
+	                		<div>
+	                			<span>中国工商银行<i>快捷<b>支付</b></i></span>
+	                			<p>储蓄卡</p>
+	                			<p><s>****</s><s>****</s><s>****</s><s>0682</s></p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		mui('.mui-bar-nav').on('tap','.mui-icon-plusempty',function(){
+			mui.openWindow({
+				url:'updata.html',
+			})
+		})
+		var scroll = mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				indicators:false,
+				bounce: false
+		});
+//		setInterval(function(){
+//			console.log(scroll.y);
+////			if(scroll.y <= '-1128'){
+////				console.log(1);
+////				scroll.y = '-1128';
+////			}
+//		},10)
+		mui('.mui-icon-plusempty').on('tap','a',function(){document.location.href='updata.html';})
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>

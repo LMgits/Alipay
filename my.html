@@ -20,7 +20,7 @@
 	            <header class="mui-bar mui-bar-nav">
             		<div class="top">
             			<span>我的</span>
-            			<span>设置</span>
+            			<a href="./Setup.html">设置</a>
             		</div>
 	            </header>
 	            <nav class="mui-bar mui-bar-tab">
@@ -52,7 +52,7 @@
 					        			<s>15397675125</s>
 					        		</div>
 					        	</div>
-						        <a class="mui-navigate-right">
+						        <a class="mui-navigate-right" href="./self.html">
 						        </a>
 						    </li>
 						</ul>
@@ -130,7 +130,7 @@
 							    </li>
 							    <li class="mui-table-view-cell">
 							    	<span class="iconfont icon-icon"></span>
-							        <a class="mui-navigate-right">
+							        <a class="mui-navigate-right" href="./Bankcard.html">
 							        	<div>
 							        		<s>银行卡</s>
 							        	</div>
@@ -163,7 +163,7 @@
 									</a>
 							    </li>
 							</ul>
-							<ul class="mui-table-view">
+							<ul class="mui-table-view bto">
 							    <li class="mui-table-view-cell">
 							    	<span class="iconfont icon-gongyiguanli"></span>
 							        <a class="mui-navigate-right">
@@ -229,23 +229,15 @@
 //				$('.mui-bar-nav .bto').css("display","flex");
 //			}
 //		});
-		mui.init({
-		  	 pullRefresh: {
-                container: '#pullrefresh',
-                down: {
-                	contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
-     				contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
-      				contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
-                    callback: function pulldownRefresh(){
-						setTimeout(function () {
-				            mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
-						}, 1000);
-					}
-                },
-                up:{
-                	
-                }
-			}
+		$('.mui-scroll').on('tap','#Bankcard', function(){
+			mui.openWindow({
+			    url:'./Bankcard.html',
+			    show:{
+			      autoShow:true,//页面loaded事件发生后自动显示，默认为true
+			      aniShow:'slide-in-right',//页面显示动画，默认为”slide-in-right“；
+			      duration:'500'//页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+			    },
+			})
 		});
 		mui('body').on('tap','a',function(){document.location.href=this.href;});
 	</script>

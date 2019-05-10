@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/mui.min.css"/>
+		<script type="text/javascript" src="./mui-master/dist/js/mui.min.js"></script>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/self.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/Setup.css"/>
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/iconfont4.css" />
+	</head>
+	<body>
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <div class="mui-inner-wrap">
+            	<header class="mui-bar mui-bar-nav">
+            	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./my.html"><s>设置</s></a>
+            	</header>
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                	<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>安全设置</s>
+						        		<span>手机号、密码</span>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>生物识别</s>
+						        		<span>人脸、指纹、声纹</span>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>支付设置</s>
+						        	</div>
+					        	</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>通用</s>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>快捷方式设置</s>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>隐私</s>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>求助反馈</s>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>关于</s>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>换账号登录</s>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>退出登录</s>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		var scroll = mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				indicators:false,
+				bounce: false
+		});
+//		setInterval(function(){
+//			console.log(scroll.y);
+////			if(scroll.y <= '-1128'){
+////				console.log(1);
+////				scroll.y = '-1128';
+////			}
+//		},10)
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>

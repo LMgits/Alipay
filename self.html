@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/mui.min.css"/>
+		<script type="text/javascript" src="./mui-master/dist/js/mui.min.js"></script>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/self.css"/>
+		<link rel="stylesheet" type="text/css" href="./mui-master/dist/css/iconfont4.css" />
+	</head>
+	<body>
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <div class="mui-inner-wrap">
+            	<header class="mui-bar mui-bar-nav">
+            	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./my.html"><s>个人信息</s></a>
+            	</header>
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                	<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>个人主页</s>
+						        		<img src="./img/bj.jpg" alt="" />
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>身份认证</s>
+						        		<span>李茂<b>已实名</b></span>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+					        	<div class="moban">
+					        		<s>支付宝账号</s>
+					        		<span>153******25</span>
+					        	</div>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>我的二维码</s>
+						        		<img src="" alt="" />
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>淘宝会员名</s>
+						        		<span>尊贵的茂爷</span>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>我的收货地址</s>
+						        	</div>
+					        	</a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>我的发票抬头</s>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>收藏有礼</s>
+						        	</div>
+						        </a>
+						    </li>
+						    <li class="mui-table-view-cell">
+						        <a class="mui-navigate-right">
+						        	<div class="moban">
+						        		<s>我的收藏</s>
+						        	</div>
+						        </a>
+						    </li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		var scroll = mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				indicators:false,
+				bounce: false
+		});
+//		setInterval(function(){
+//			console.log(scroll.y);
+////			if(scroll.y <= '-1128'){
+////				console.log(1);
+////				scroll.y = '-1128';
+////			}
+//		},10)
+		mui('body').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>
